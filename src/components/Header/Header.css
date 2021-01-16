@@ -1,0 +1,43 @@
+header {
+    padding:20px;
+    /* background-color:red; */
+    background:rgb(0, 191, 255, .075);
+  
+  }
+  
+  .header-content {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 65em;
+    margin: 0 auto;
+  }
+  
+  .header-content > * { flex: 3 }
+  
+  .hello {
+    color: yellow;
+    font-weight:bold;
+    font-size: large;
+  }
+  
+  
+  nav {
+    min-width: 13em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: right;
+  }
+  
+  /*  spaced repetition link  */
+  .spaced-rep-link {
+  color:white;
+  text-decoration:none;
+  }
+  
+  /*  log in, log out links */
+  .text-link {
+    color: paleturquoise;
+    text-decoration:none;
+    padding: 0 .5em;
+  }

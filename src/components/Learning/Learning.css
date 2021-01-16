@@ -1,0 +1,123 @@
+/* whole page */
+.learning {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    max-width: 40em;
+    margin: 6em auto 0 auto;
+    padding: 2em;
+    position: relative;
+    color: #fff;
+    /* border: .2em solid yellow; */
+    background:rgb(0, 191, 255, .075);
+    border-radius: 1em;
+  }
+  
+  /*  box size for answers - keeps overlay in line also */
+  .learning h3 {
+    min-width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(22, 13, 120, 1);
+    color: #fff;
+    border-bottom: none;
+    opacity: 1;
+    transition: all 1s;
+  }
+  
+  /* 'translate the word' */
+  .learning h2 {
+    margin: 0 0 0.5em 0;
+    color:paleturquoise;
+  }
+  
+  /*  word to translate */
+  .learning span {
+    font-size: 3em;
+    color: yellow;
+    padding: .2em;
+  }
+  
+  /*  total score */
+  .DisplayScore {
+    margin: 2em 0 0 0;
+    color: #90a0f7;
+  }
+  
+  /* form including button - sizing and margins*/
+  .learning form {
+    display: flex;
+    flex-direction: column;
+    max-width: 20em;
+    margin: 0 auto 3.5em auto;
+  }
+  
+  /*  'whats the translation for this word'*/
+  .learning form label {
+    font-weight: bold;
+    font-size: 1em;
+    color: paleturquoise;
+  }
+  
+  /* input box */
+  #learn-guess-input {
+    margin: 1em 0;
+    padding: 7px 12px;
+    border: 3px solid transparent;
+    border-radius: .3em;
+    border-color: #f7f7f7;
+    font-size: 1.2em;
+    font-weight: bold;
+    background: transparent;
+    color: #f7f7f7;
+    transition: all .25s;
+  }
+  
+  .btn {
+    border:none;
+    border-radius: .3em;
+    background-color: red;
+    color:white;
+    padding: .3em .6em;
+    margin: .3em;
+    font-size: 1.5em;
+    border: 3px solid transparent;
+  }
+  
+  /* incorrect/correct count */
+  .word-count {
+    margin: .2em;
+  }
+  
+  .word-count:nth-of-type(1) { color: palegreen }
+  .word-count:nth-of-type(2) { color: palevioletred}
+  
+  /*  overlay  */
+  #feedback-overlay {
+    outline: none;
+  }
+  
+  #feedback-overlay.invisible {
+    pointer-events: none;
+    opacity: 0;
+  }
+  
+  .hidden {
+    display:none;
+  }
+  
+  
+  @media only screen and (max-width: 425px) {
+    .learn-page h2 {
+      font-size: 8vw;
+    }
+  }
+  

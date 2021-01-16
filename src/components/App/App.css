@@ -1,0 +1,22 @@
+body {
+    background-color:darkblue;
+    /* background: url('https://live.staticflickr.com/65535/50719937287_34414a2acf_w.jpg'); */
+  }
+  
+  .registration-page {
+    color:white;
+    text-align:center;
+  }
+  
+  .registration-page p {
+    color: yellow;
+    font-size: 1.5em;
+    /* font-weight: bold;  */
+    padding-top: 1em;
+  }
+  
+  .registration-page h2 {
+    /* color:palegoldenrod; */
+    font-size: 1.5em;
+    padding-top: 2em;
+  }

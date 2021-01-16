@@ -40,17 +40,17 @@ class RegistrationForm extends Component {
   render() {
     const { error } = this.state
     return (
-      <form
+      <form className='registration-form'
         onSubmit={this.handleSubmit}
       >
         <div role='alert'>
           {error && <p>{error}</p>}
         </div>
         <div>
-          <Label htmlFor='registration-name-input'>
+          <Label htmlFor='registration-name-input' className='form-text'>
             Enter your name<Required />
           </Label>
-          <Input
+          <Input className='text-box'
             ref={this.firstInput}
             id='registration-name-input'
             name='name'
@@ -58,20 +58,20 @@ class RegistrationForm extends Component {
           />
         </div>
         <div>
-          <Label htmlFor='registration-username-input'>
+          <Label htmlFor='registration-username-input' className='form-text'>
             Choose a username<Required />
           </Label>
-          <Input
+          <Input  className='text-box'
             id='registration-username-input'
             name='username'
             required
           />
         </div>
         <div>
-          <Label htmlFor='registration-password-input'>
+          <Label htmlFor='registration-password-input' className='form-text'>
             Choose a password<Required />
           </Label>
-          <Input
+          <Input  className='text-box'
             id='registration-password-input'
             name='password'
             type='password'
@@ -79,11 +79,11 @@ class RegistrationForm extends Component {
           />
         </div>
         <footer>
-          <Button type='submit'>
+          <Button className='sign-up-button' type='submit'>
             Sign up
           </Button>
           {' '}
-          <Link to='/login'>Already have an account?</Link>
+          <Link className='already-have-acct' to='/login'>Already have an account?</Link>
         </footer>
       </form>
     )

@@ -1,0 +1,83 @@
+.dashboard {
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  /* Norwegian */
+  .dash-language-header {
+    padding: 0.5em 0;
+    font-size: 3em;
+    color: #ffffff;
+  }
+  
+  /* Start Practicing Button */
+  .start-button {
+    border:none;
+    border-radius: .3em;
+    background-color: red;
+    color:white;
+    padding: .3em .6em;
+    margin: .3em;
+    font-size: 1.5em;
+    /* justify-items:center; */
+  }
+  
+  .start-btn {
+    justify-items: center;
+  }
+  
+  
+  /* 'Words To Practice' */
+  .dash-list-title {
+    color:yellow;
+    justify-items: center;
+  }
+  
+  /* Adds padding to list so it's not full screen width */
+  .word-list {
+    list-style: none;
+    padding: 0 10%;
+  }
+  
+  /* list of words - sets background to sheer, keeps both sides of text inline*/
+  .word-list li{
+    background:rgb(0, 191, 255, .1);
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0 0 ;
+    border-radius: 1em;
+  }
+  
+  /* sets word to be away from the border */
+  .word-list h4 {
+    margin: .7em 2em;
+    font-size: 1.5em;
+  }
+  
+  .word-list div {
+    display: flex;
+    flex-direction: column;
+    text-align:right;
+    padding: .1em 1em;
+    margin: .7em 2em;
+  }
+  
+  
+  
+  .correct-count {
+    color: lightgreen; 
+  }
+  
+  .incorrect-count {
+    color:palevioletred;
+  }
+  
+  .total-correct {
+    color:lightyellow;
+    text-align: center;
+    padding: .1em 1em ;
+  }
+  
