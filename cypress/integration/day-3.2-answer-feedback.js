@@ -90,7 +90,7 @@ describe(`User story: Answer feedback`, function() {
               'have.text',
               `Your total score is: ${incorrectFixture.totalScore}`,
             )
-          cy.get('h2')
+          cy.get('h3')
             .should(
               'have.text',
               `Good try, but not quite right :(`,
@@ -144,7 +144,7 @@ describe(`User story: Answer feedback`, function() {
               'have.text',
               `Your total score is: ${incorrectFixture.totalScore}`,
             )
-          cy.get('h2')
+          cy.get('h3')
             .should(
               'have.text',
               `You were correct! :D`,
