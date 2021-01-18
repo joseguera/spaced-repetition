@@ -10,6 +10,7 @@ import LearningRoute from '../../routes/LearningRoute/LearningRoute'
 import NotFoundRoute from '../../routes/NotFoundRoute/NotFoundRoute'
 import './App.css'
 
+// App file
 export default class App extends Component {
   state = { hasError: false }
 
