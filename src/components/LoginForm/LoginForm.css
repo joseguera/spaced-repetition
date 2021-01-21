@@ -7,18 +7,18 @@
     font-weight: bold;
     }
   
-  .registration-form {
+  .LoginForm {
     display:flex;
     flex-direction: column;
     align-items:center;
     /* flex:1; */
     }
+    
+    .error {
+        background-color: cornflowerblue;
+        font-weight: bolder;  
+      }
   
-  .error {
-    background-color: cornflowerblue;
-    font-weight: bolder;  
-  }
-
   .sign-up-button {
     border:none;
     border-radius: .3em;
@@ -34,10 +34,5 @@
     padding: 1em;
     font-size: 1.2em;
     color:paleturquoise;
-    }
-  
-    .already-have-acct {
-      color: paleturquoise;
-      padding: 0 .5em;
-    }
+}
   
