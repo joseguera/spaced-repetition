@@ -18,7 +18,6 @@ const AuthApiService = {
   },
   // Error //
   postLogin({ username, password }) {
-    console.log("postLogin")
     return fetch(`${config.API_ENDPOINT}/auth/token`, {
       method: 'POST',
       headers: {
@@ -27,10 +26,8 @@ const AuthApiService = {
       body: JSON.stringify({ username, password }),
     })
       .then(res => {
-        console.log(res)
         return (!res.ok)
           ? res.json().then(err => {
-            console.log(err)
             Promise.reject(err)
           })
           : res.json()

@@ -39,8 +39,6 @@ class Dashboard extends Component {
       })
       .then(response => response.json())
       .then(response => {
-        // console.log(response);
-        // console.log(this.context)
         this.context.setLanguage(response.language);
         this.context.setWords(response.words);
       })
@@ -63,7 +61,6 @@ class Dashboard extends Component {
 
 
   render() {
-    // console.log(this.context);
     return (
       //context.language if/else statement
       <div className='dashboard'>
