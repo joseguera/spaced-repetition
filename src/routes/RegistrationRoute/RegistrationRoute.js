@@ -10,6 +10,7 @@ class RegistrationRoute extends Component {
   }
 
   handleRegistrationSuccess = (username, password) => {
+    console.log(username, password)
     AuthApiService.postLogin({
       username: username,
       password: password,
@@ -20,6 +21,7 @@ class RegistrationRoute extends Component {
         history.push('/')
       })
       .catch(res => {
+        console.error(res.error);
         this.setState({ error: res.error })
       })
   }
